@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/tadpoles/:id/destroy', to: 'tadpoles#destroy'
 
   # code your post to  '/tadpoles/:id/metamorphose' here
-  # it should direct to the tadpoles controller, the metamorphose action
+  post '/tadpoles/:id/metamorphose', to: 'tadpoles#metamorphose', as: "metamorphose"
 
   # resources
   resources :ponds
